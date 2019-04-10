@@ -2,9 +2,9 @@
 #include <stdlib.h>
 #include <time.h>
 #include <sys/time.h>
-#define m 2000
+#define m 1000
 #define n 1000
-#define p 2000
+#define p 1000
 
 int A[m][n];
 int B[n][p];
@@ -34,7 +34,7 @@ int main() {
     ////***算法开始***////
     for (int k = 0; k < n; k++) {
         for (int i = 0; i < m; i++) {
-        	int r = A[i][k];
+            int r = A[i][k];
             for (int j = 0; j < p; j++) {
                 C[i][j] += r * B[k][j];
             }
@@ -47,7 +47,7 @@ int main() {
     ////***算法开始***////
     for (int i = 0; i < m; i++) {
         for (int k = 0; k < n; k++) {
-        	int r = A[i][k];
+            int r = A[i][k];
             for (int j = 0; j < p; j++) {
                 C[i][j] += r * B[k][j];
             }
@@ -62,7 +62,7 @@ int main() {
     ////***算法开始***////
     for (int i = 0; i < m; i++) {
         for (int j = 0; j < p; j++) {
-        	int sum = 0;
+            int sum = 0;
             for (int k = 0; k < n; k++) {
                 sum += A[i][k] * B[k][j];
             }
@@ -76,7 +76,7 @@ int main() {
     ////***算法开始***////
     for (int j = 0; j < p; j++) {
         for (int i = 0; i < m; i++) {
-        	int sum = 0;
+            int sum = 0;
             for (int k = 0; k < n; k++) {
                 sum += A[i][k] * B[k][j];
             }
@@ -92,7 +92,7 @@ int main() {
     ////***算法开始***////
     for (int j = 0; j < p; j++) {
         for (int k = 0; k < n; k++) {
-        	int r = B[k][j];
+            int r = B[k][j];
             for (int i = 0; i < m; i++) {
                 C[i][j] += A[i][k] * r;
             }
@@ -105,7 +105,7 @@ int main() {
     ////***算法开始***////
     for (int k = 0; k < n; k++) {
         for (int j = 0; j < p; j++) {
-        	int r = B[k][j];
+            int r = B[k][j];
             for (int i = 0; i < m; i++) {
                 C[i][j] += A[i][k] * r;
             }
