@@ -1,2 +1,2 @@
-# ccnu-computer-organization
-computer organization 李沛 9501
+# computer-organization
+computer organization
